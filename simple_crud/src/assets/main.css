@@ -1,0 +1,25 @@
+@import 'tailwindcss';
+body {
+  background-color: rgba(243, 226, 212, 0.5);
+}
+#app {
+  max-width: 2560px;
+  min-height: 100vh;
+  font-weight: normal;
+  display: flex; /* tambah */
+  align-items: center; /* pusat vertikal */
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* @media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+} */
+
+/* @media (min-width: 1024px) {
+  body {
+    display: flex;
+  }
+} */
