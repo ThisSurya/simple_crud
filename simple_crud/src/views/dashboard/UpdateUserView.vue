@@ -100,7 +100,7 @@ async function OnSubmit(e: Event) {
   });
 
   if (result.status === 'failed') {
-    error.value = result.message || 'Registration failed';
+    error.value = result.message || 'Update failed';
     return;
   }
 

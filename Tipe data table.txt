@@ -1,0 +1,6 @@
+name db: horus_surya_db
+id: BigInteger, auto increment, pk
+username: varchar(255)
+password: varchar(255)
+email: varchar(255)
+nama: varchar(255)

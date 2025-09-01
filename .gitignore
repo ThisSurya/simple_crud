@@ -5,6 +5,7 @@ dist/
 build/
 # ignore environment variable files
 .env
+.flaskenv
 .env.local
 .env.*.local
 # ignore logs
