@@ -11,11 +11,11 @@ services:
     networks:
       - app-network
     environment:
-      JWT_SECRET: mysecretjwt
-      DB_HOST: database
-      DB_DATABASE: horus_surya_db
-      DB_USERNAME: surya
-      DB_PASSWORD: surya123
+      JWT_SECRET: ${JWT_SECRET}
+      DB_HOST: ${DB_HOST}
+      DB_DATABASE: ${DB_DATABASE}
+      DB_USERNAME: ${DB_USERNAME}
+      DB_PASSWORD: ${DB_PASSWORD}
   
   frontend:
     build: ./simple_crud
@@ -35,10 +35,10 @@ services:
     networks:
       - app-network
     environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: horus_surya_db
-      MYSQL_USER: surya
-      MYSQL_PASSWORD: surya123
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
 
 networks:
   app-network:
