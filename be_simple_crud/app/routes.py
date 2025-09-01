@@ -10,7 +10,6 @@ def index():
 def login():
     return UserController.login()
 
-
 @app.route('/register', methods=['POST'])
 def register():
     return UserController.store()
